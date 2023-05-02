@@ -9,24 +9,24 @@ const ExpenseForm = () => {
     const [enteredDate, setEnteredDate] = useState('');
 
 
-    const titleChangeHandle = (eventX) => {
+    const titleChangeHandle = (props) => {
 
-        setEnteredTitle(eventX.target.value);
-        console.log(eventX.target.value);
-
-    };
-
-    const amountChangeHandle = (eventX) => {
-
-        setEnteredAmount(eventX.target.value);
-        console.log(eventX.target.value);
+        setEnteredTitle(props.target.value);
+        console.log(props.target.value);
 
     };
 
-    const dateChangeHandle = (eventX) => {
+    const amountChangeHandle = (props) => {
 
-        setEnteredDate(eventX.target.value);
-        console.log(eventX.target.value);
+        setEnteredAmount(props.target.value);
+        console.log(props.target.value);
+
+    };
+
+    const dateChangeHandle = (props) => {
+
+        setEnteredDate(props.target.value);
+        console.log(props.target.value);
 
     };
     // const titleChangeHandle = (Xevent) => {
@@ -35,9 +35,9 @@ const ExpenseForm = () => {
 
     // };
 
-    const submitHandle = (eventX) => {
-        eventX.preventDefault();
-        //console.log(eventX);
+    const submitHandle = (props) => {
+        props.preventDefault();
+        //console.log(props);
         const NewExpense = {
             title: enteredTitle,
             amount: enteredAmount,
