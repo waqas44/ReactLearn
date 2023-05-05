@@ -7,6 +7,10 @@ const ExpensesFilter = (props) => {
 
     const dropdownChangeHandler = (propsEventx) => {
         props.onChangeFilter(propsEventx.target.value);
+        // console.log('THIS IS YEAR' + propsEventx.target.value);
+        //console.log(propsEventx);
+        //let abc = propsEventx.target.value;
+        //console.log(abc);
     };
 
 
