@@ -5,7 +5,7 @@ import ChartBar from "./ChartBar";
 
 import './ChartBar.css';
 const Chart = (props) => {
-    const
+
 
     return (
         <div className="chart">
